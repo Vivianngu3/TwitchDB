@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "785d74be-58aa-4b67-a0c4-0caffa408d67",
+		"name": "Twitch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4400",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"inputs\":{\r\n  \"id\":null,\r\n    \"firstName\":\"Mervin\", \r\n    \"lastName\":\"Jons\", \r\n    \"password\":\"ppp\", \r\n    \"avatar\":\"avatar.jpg\", \r\n    \"initials\":\"MJ\", \r\n    \"email\":\"email@123.com\", \r\n    \"bio\":\"some bio\", \r\n    \"active\":1, \r\n    \"dateAdded\":\"*fillInCurrentDate*\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"query": [
+						{
+							"key": "/course/getCoachStats",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/showTables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/showTables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"showTables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateAbout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"inputs\":{\r\n  \"id\":2,\r\n    \"name\":\"aceu\", \r\n    \"bio\":\"bowl\", \r\n    \"followCount\": 2300000, \r\n    \"socialLink\": null, \r\n    \"pannel\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateAbout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateAbout"
+					],
+					"query": [
+						{
+							"key": "/course/getCoachStats",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"inputs\":\r\n{\r\n    \"id\":1,\r\n    \"title\":\"Games\", \r\n    \"description\":\"Live streams of all your favorite games, from shooters to platformers and everything in between.\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateLive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"id\": 2,\r\n        \"title\": \"NRG aceu // ringing // !socials\",\r\n        \"name\": \"Aceu\",\r\n        \"viewLive\": 11084,\r\n        \"display\": \"OBS Studios\",\r\n        \"time\": \"2022-03-11 5:14:32\",\r\n        \"follow\": 1,\r\n        \"subscribe\": 1\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateLive",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateLive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateChannel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\":\r\n    {\"id\":1,\r\n    \"name\":\"SEN ShahZaM\",\r\n    \"followCount\": 1358000,\r\n    \"verification\": 1,\r\n    \"avatar\": \"ShahzamNew.jpg\",\r\n    \"follow\": 1,\r\n    \"subscribe\": 1,\r\n    \"liveId\": 1,\r\n    \"aboutId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateChannel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateChannel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateLiveCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"liveId\": 2,\r\n        \"categoryId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateLiveCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateLiveCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateChat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"id\": 2,\r\n        \"name\": \"kyoshi\",\r\n        \"message\": \"POGU POGU\",\r\n        \"badge\": null,\r\n        \"settings\": null,\r\n        \"liveId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateChat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateChat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateTag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"id\": 2,\r\n        \"name\": \"RPG\",\r\n        \"liveId\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateTag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateTag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/getCategoryLive/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/getCategoryLive/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"getCategoryLive",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/getChatMessage/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/getChatMessage/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"getChatMessage",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/getAboutBio/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/getAboutBio/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"getAboutBio",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/updateChatName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"name\": \"AngelXX\",\r\n        \"id\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/updateChatName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"updateChatName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/updateChannelAvatar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"avatar\": \"betterPic.jpg\",\r\n        \"id\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/updateChannelAvatar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"updateChannelAvatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteLiveCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"categoryId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteLiveCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteLiveCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteTopicTag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"tagId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteTopicTag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteTopicTag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteTag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"id\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteTag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteTag"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
