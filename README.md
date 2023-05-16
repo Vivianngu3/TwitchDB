@@ -1,2 +1,4 @@
 # TwitchDB
-Data Base and Data Modeling in MySQL workbench
+Data Base and Data Modeling for INFO 330
+
+## Currently under construction...
